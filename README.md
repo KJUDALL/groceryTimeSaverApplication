@@ -1,8 +1,6 @@
 # Module 5 - Project #1
 
-## Project Requirements:
-
-# Creating an Application for Desktop Display
+## Creating an Application for Desktop Display:
 
 - Must be responsive and have a polished UI (must be supportive and user friendly on different screen sizes)
 - must use client-side storage to store persistent data
