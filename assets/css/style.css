@@ -1,1 +1,8 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    
+}
