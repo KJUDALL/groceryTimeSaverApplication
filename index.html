@@ -1,32 +1,31 @@
 <html lang="en" data-theme="light">
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Grocery Time-Saver</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grocery Time-Saver</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+</head>
 
-	<body>
-		<!-- Title and date input section -->
-		<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
-		<section class="subtitle is-5 has-text-centered" id="datePicker">
-			<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
-			<input type="date" class="has-text-primary-0">
+<body>
+	<!-- Title and date input section -->
+	<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
+	<section class="subtitle is-5 has-text-centered" id="datePicker">
+		<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
+		<input type="date" class="has-text-primary-0">
 
 		<!-- List Container. Need to adjust size, spacing, buttons -->
 		<section>
 
 			<div class="container">
 				<div class="box">
-					<p></p>
-					<div class="col-md-6">
-						<input type="text" class="form-control" placeholder="Add your text">
-						<button class="button is-primary is-small">Add</button>
-					</div>
+					<p>Grocery List</p>
+					
+
 
 					<ul>
-						<li>list item 1</li>
+						<li><input type="checkbox"/> list item 1</li>
+				
 						<li>list item 2</li>
 						<li>list item 3</li>
 						<li>list item 4</li>
@@ -40,8 +39,17 @@
 		</section>
 
 		<!-- "Add button section" -->
-		<section class="has-text-centered">
-			<button class="button is-large is-hovered is-rounded is-responsive is-inverted is-outlined has-text-primary-90">+</button>
+		<section class="my-4">
+
+			<div class="field has-addons has-addons-centered is-responsive">
+				<div class="control">
+					<input type="text" class="input is-rounded is-large" placeholder="Add your text"/>
+				</div>
+				<div class="control">
+					<button class="button is-large is-rounded is-primary has-text-inverted">+</button>
+				</div>
+			</div>
+
 		</section>
 
 		<!-- // Footer section  -->
@@ -51,6 +59,6 @@
 			</div>
 		</footer>
 
-	</body>
+</body>
 
 </html>
