@@ -85,7 +85,9 @@ This project is graded on the following criteria:
 
 - Every group member should speak during the presentation.
 
-- Your presentation should follow the Project Presentation TemplateLinks to an external site..
+- Your presentation should follow the Project Presentation Template
+
+- Links to an external site..
 
 ### Collaboration 10%
 

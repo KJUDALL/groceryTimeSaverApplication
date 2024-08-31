@@ -1,57 +1,56 @@
 <html lang="en" data-theme="light">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Grocery Time-Saver</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery Time-Saver</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+	</head>
 
-<body>
+	<body>
+		<!-- Title and date input section -->
+		<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
+		<section class="subtitle is-5 has-text-centered" id="datePicker">
+			<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
+			<input type="date" class="has-text-primary-0">
 
-	<h1>Grocery-Time Saver</h1>
-	<p> TBD </p>
-	<section>
-		<label for="dateInput">Enter Date:</label>
-		<input type="date" id="dateInput">
-		<button id="saveDateBtn">Save Date</button>
-	</section>
+		<!-- List Container. Need to adjust size, spacing, buttons -->
+		<section>
 
-	<!-- List Container. Need to adjust size, spacing, buttons -->
-	<section>
+			<div class="container">
+				<div class="box">
+					<p></p>
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Add your text">
+						<button class="button is-primary is-small">Add</button>
+					</div>
 
-		<div class="container">
-			<div class="box">
-				<p></p>
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Add your text">
-					<button class="button is-primary is-small">Add</button>
+					<ul>
+						<li>list item 1</li>
+						<li>list item 2</li>
+						<li>list item 3</li>
+						<li>list item 4</li>
+						<li>list item 5</li>
+					</ul>
 				</div>
-
-				<ul>
-					<li>list item 1</li>
-					<li>list item 2</li>
-					<li>list item 3</li>
-					<li>list item 4</li>
-					<li>list item 5</li>
-				</ul>
 			</div>
-		</div>
 
 
 
-	</section>
+		</section>
 
+		<!-- "Add button section" -->
+		<section class="has-text-centered">
+			<button class="button is-large is-hovered is-rounded is-responsive is-inverted is-outlined has-text-primary-90">+</button>
+		</section>
 
-	<section>
-		<button class="button is-large is-hovered is-rounded is-responsive is-inverted is-outlined">+</button>
-	</section>
-	<footer class="footer">
-		<div class="content has-text-centered">
-			<p><strong>Grocery Time-Saver</strong> Time-Saver by &#8482Team AKC.</p>
-		</div>
-	</footer>
+		<!-- // Footer section  -->
+		<footer class="footer is-fullheight">
+			<div class="content has-text-centered">
+				<p><strong class="has-text-primary-30">Grocery Time-Saver</strong> by &#8482Team AKC.</p>
+			</div>
+		</footer>
 
-</body>
+	</body>
 
 </html>
