@@ -5,9 +5,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Grocery Time-Saver</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+
+		<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
+		<style>
+			.modal-footer {
+				display: flex;
+				justify-content: center; 
+			}
+		</style>
+
+		<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
+		<style>
+			.wave {
+				animation-name: wave-animation;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				transform-origin: 70% 70%;
+				display: inline-block;
+			}
+		</style>
+
+		<style>
+			@keyframes wave-animation {
+				0% { transform: rotate( 0.0deg ) }
+				20% { transform: rotate(-8.0deg) }
+  				30% { transform: rotate(14.0deg) }
+   				40% { transform: rotate(-4.0deg) }
+  				50% { transform: rotate(10.0deg) }
+  				60% { transform: rotate( 0.0deg) }
+		
+			}
+		</style>
 	</head>
 
-	<body>
+		<!-- Added class to <body> tag to center all content on page here: -->
+	<body class="has-text-centered">
+		
+
 		<!-- Title and date input section -->
 		<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
 		<section class="subtitle is-5 has-text-centered" id="datePicker">
@@ -53,4 +87,43 @@
 
 	</body>
 
-</html>
+
+		</footer>
+	</div>
+</div>
+
+<!-- Modal Implementation Placed Here: -->
+<!-- Activated Modal Here: -->
+<div class="modal is-active">
+
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Before You Start ...</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+
+			<!-- Modal Content Added Here: -->
+			<h1>Hello<span class="wave">👋🏾</span>
+			</h1>
+			<p>
+			Welcome to Grocery Time-Saver!
+			</p>
+			<p>
+			Our mission is to help users nationwide have a more
+			efficient grocery shopping experience.
+			Enjoy.
+			</p>
+		</section>
+
+		<!-- Created custom div class ("modal-footer") for the modal footer below: -->
+		<div class="modal-card-foot modal-footer">
+			<div class="buttons">
+				<button class="button">Let's Get Started!</button>
+			</div>
+
+		</div>
+</div>
+
+		</html>
