@@ -1,8 +1,17 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px;
-    
+ul li {
+    list-style: none;
+    font-size: large;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: "\26AC";
+    color: black; 
+    display: inline-block;
+    margin-left: -1.5em;
+    position: absolute;
 }
