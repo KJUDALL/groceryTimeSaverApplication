@@ -1,5 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
+<<<<<<< HEAD
 ul li {
     list-style: none;
     font-size: large;
@@ -15,3 +16,11 @@ ul li::before {
     margin-left: -1.5em;
     position: absolute;
 }
+=======
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    
+}
+>>>>>>> origin/main
