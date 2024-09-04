@@ -5,10 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Grocery Time-Saver</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-	<link rel="stylesheet" href="assets\css\style.css" />
-</head>
-
-<body>
 
 	<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
 	<style>
@@ -70,46 +66,46 @@
 		<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
 		<input type="date" class="has-text-primary-0">
 
-	<section class="my-4">
+		<!-- List Container. Need to adjust size, spacing, buttons -->
+		<section>
 
-		<div class="container">
-			<div class="box">
+			<div class="container">
+				<div class="box">
+					<p></p>
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Add your text">
+						<button class="button is-primary is-small">Add</button>
+					</div>
 
-				<ul id="list-container">
-					<li>Apples</li>
-					<li>Oranges</li>
-					<li>Bananas</li>
-				</ul>
+					<ul>
+						<li>list item 1</li>
+						<li>list item 2</li>
+						<li>list item 3</li>
+						<li>list item 4</li>
+						<li>list item 5</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</section>
 
 
 
+		</section>
 
-	<!-- "Add button section" -->
-	<section class="my-4">
+		<!-- "Add button section" -->
+		<section class="has-text-centered">
+			<button
+				class="button is-large is-hovered is-rounded is-responsive is-inverted is-outlined has-text-primary-90">+</button>
+		</section>
 
-
-		<div class="field has-addons has-addons-centered is-responsive">
-			<div class="control">
-				<input id="input-box" type="text" class="input is-rounded is-large" placeholder="Add your text" />
+		<!-- // Footer section  -->
+		<footer class="footer is-fullheight">
+			<div class="content has-text-centered">
+				<p><strong class="has-text-primary-30">Grocery Time-Saver</strong> by &#8482Team AKC.</p>
 			</div>
-			<div class="control">
-				<button id="add-button" class="button is-large is-rounded is-primary has-text-inverted">+</button>
-			</div>
-		</div>
-
-	</section>
-
-	<!-- // Footer section  -->
-	<footer class="footer is-fullheight">
-		<div class="content has-text-centered">
-			<p><strong class="has-text-primary-30">Grocery Time-Saver</strong> by &#8482Team AKC.</p>
-		</div>
-	</footer>
+		</footer>
 
 </body>
+
 
 <!-- Modal Implementation Placed Here: -->
 <!-- Activated Modal Here: -->
@@ -148,5 +144,6 @@
 
 		</div>
 	</div>
+
 
 </html>
