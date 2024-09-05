@@ -1,26 +1,29 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
-<<<<<<< HEAD
+* {
+	background-color: rgb(238, 233, 233);
+}
+
+.footer {
+	background-color: rgb(238, 233, 233);
+}
+
+.box {
+	background-color: rgb(238, 233, 233);
+}
+
 ul li {
-    list-style: none;
-    font-size: large;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    position: relative;
+	list-style: none;
+	font-size: large;
+	padding: 12px 8px 12px 50px;
+	user-select: none;
+	position: relative;
 }
 
 ul li::before {
-    content: "\26AC";
-    color: black; 
-    display: inline-block;
-    margin-left: -1.5em;
-    position: absolute;
+	content: "\26AC";
+	color: black;
+	display: inline-block;
+	margin-left: -1.5em;
+	position: absolute;
 }
-=======
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px;
-    
-}
->>>>>>> origin/main

@@ -1,152 +1,154 @@
 <html lang="en" data-theme="light">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Grocery Time-Saver</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-	<link rel="stylesheet" href="assets\css\style.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery Time-Saver</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="assets\css\style.css" />
+	</head>
 
-<body>
+	<body>
 
-	<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
-	<style>
-		.modal-footer {
-			display: flex;
-			justify-content: center;
-		}
-	</style>
-
-	<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
-	<style>
-		.wave {
-			animation-name: wave-animation;
-			animation-duration: 2.5s;
-			animation-iteration-count: infinite;
-			transform-origin: 70% 70%;
-			display: inline-block;
-		}
-	</style>
-
-	<style>
-		@keyframes wave-animation {
-			0% {
-				transform: rotate(0.0deg)
+		<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
+		<style>
+			.modal-footer {
+				display: flex;
+				justify-content: center;
 			}
+		</style>
 
-			20% {
-				transform: rotate(-8.0deg)
+		<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
+		<style>
+			.wave {
+				animation-name: wave-animation;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				transform-origin: 70% 70%;
+				display: inline-block;
 			}
+		</style>
 
-			30% {
-				transform: rotate(14.0deg)
+		<style>
+			@keyframes wave-animation {
+				0% {
+					transform: rotate(0.0deg)
+				}
+
+				20% {
+					transform: rotate(-8.0deg)
+				}
+
+				30% {
+					transform: rotate(14.0deg)
+				}
+
+				40% {
+					transform: rotate(-4.0deg)
+				}
+
+				50% {
+					transform: rotate(10.0deg)
+				}
+
+				60% {
+					transform: rotate(0.0deg)
+				}
+
 			}
+		</style>
 
-			40% {
-				transform: rotate(-4.0deg)
-			}
+		<!-- Added class to <body> tag to center all content on page here: -->
 
-			50% {
-				transform: rotate(10.0deg)
-			}
+		<div class="has-text-centered">
 
-			60% {
-				transform: rotate(0.0deg)
-			}
+			<!-- Title and date input section -->
+			<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
+			<section class="subtitle is-5 has-text-centered" id="datePicker">
+				<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
+				<input type="date" class="has-text-primary-0">
 
-		}
-	</style>
-</head>
+				<section class="my-4">
 
-<!-- Added class to <body> tag to center all content on page here: -->
+					<div class="container">
+						<div class="box">
 
-<body class="has-text-centered">
+							<ul id="list-container">
+								<li>Apples</li>
+								<li>Oranges</li>
+								<li>Bananas</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- "Add button section" -->
+				<section class="my-4">
+
+					<div class="field has-addons has-addons-centered is-responsive">
+						<div class="control">
+							<input id="input-box" type="text" class="input is-rounded is-large"
+								placeholder="Add your text" />
+						</div>
+						<div class="control">
+							<button id="add-button"
+								class="button is-large is-rounded is-primary has-text-inverted">+</button>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- // Footer section  -->
+				<footer class="footer is-fullheight">
+					<div class="content has-text-centered">
+						<p><strong class="has-text-primary-30">Grocery Time-Saver</strong> by &#8482Team AKC.</p>
+					</div>
+				</footer>
+			</section>
+		</div>
+
+		<!-- Modal Implementation Placed Here: -->
+		<!-- Activated Modal Here: -->
+		<div class="modal is-not-active">
+
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"> <strong>Before You Start...</strong> </p>
+					<button class="delete" aria-label="close"></button>
+				</header>
+				<section class="modal-card-body">
+
+					<!-- Modal Content Added Here: -->
+					<h1>Hello<span class="wave">👋🏾</span>
+					</h1>
+					<p>
+						Welcome to <strong class="has-text-primary-30">Grocery Time-Saver</strong>!
+					</p>
+					<p>
+						Our mission is to help users nationwide have a more
+						<strong class="has-text-primary-30">&#10024;efficient&#10024;</strong> grocery shopping
+						experience.
+					</p>
+					<p>
+						Enjoy!
+					</p>
 
 
-	<!-- Title and date input section -->
-	<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
-	<section class="subtitle is-5 has-text-centered" id="datePicker">
-		<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
-		<input type="date" class="has-text-primary-0">
+				</section>
 
-	<section class="my-4">
+				<!-- Created custom div class ("modal-footer") for the modal footer below: -->
+				<div class="modal-card-foot modal-footer">
+					<div class="buttons">
+						<button class="button"> <strong> Let's Get Started! </strong> </button>
+					</div>
 
-		<div class="container">
-			<div class="box">
-
-				<ul id="list-container">
-					<li>Apples</li>
-					<li>Oranges</li>
-					<li>Bananas</li>
-				</ul>
+				</div>
 			</div>
 		</div>
-	</section>
-
-
-
-
-	<!-- "Add button section" -->
-	<section class="my-4">
-
-
-		<div class="field has-addons has-addons-centered is-responsive">
-			<div class="control">
-				<input id="input-box" type="text" class="input is-rounded is-large" placeholder="Add your text" />
-			</div>
-			<div class="control">
-				<button id="add-button" class="button is-large is-rounded is-primary has-text-inverted">+</button>
-			</div>
-		</div>
-
-	</section>
-
-	<!-- // Footer section  -->
-	<footer class="footer is-fullheight">
-		<div class="content has-text-centered">
-			<p><strong class="has-text-primary-30">Grocery Time-Saver</strong> by &#8482Team AKC.</p>
-		</div>
-	</footer>
-
-</body>
-
-<!-- Modal Implementation Placed Here: -->
-<!-- Activated Modal Here: -->
-<div class="modal is-active">
-
-	<div class="modal-background"></div>
-	<div class="modal-card">
-		<header class="modal-card-head">
-			<p class="modal-card-title"> <strong>Before You Start...</strong> </p>
-			<button class="delete" aria-label="close"></button>
-		</header>
-		<section class="modal-card-body">
-
-			<!-- Modal Content Added Here: -->
-			<h1>Hello<span class="wave">👋🏾</span>
-			</h1>
-			<p>
-				Welcome to <strong class="has-text-primary-30">Grocery Time-Saver</strong>!
-			</p>
-			<p>
-				Our mission is to help users nationwide have a more
-				<strong class="has-text-primary-30">&#10024;efficient&#10024;</strong> grocery shopping experience.
-			</p>
-			<p>
-				Enjoy!
-			</p>
-
-
 		</section>
 
-		<!-- Created custom div class ("modal-footer") for the modal footer below: -->
-		<div class="modal-card-foot modal-footer">
-			<div class="buttons">
-				<button class="button"> <strong> Let's Get Started! </strong> </button>
-			</div>
+		<script src="./assets/js/script.js"></script>
+	</body>
 
-		</div>
-	</div>
-	<script src="./assets/js/script.js"></script>
 </html>
