@@ -9,63 +9,15 @@
 	</head>
 
 	<!-- Added formatting to center all content within the page + the Modal here: -->
-	<body class="has-text-centered"> 
 
-
-		<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
-		<style>
-			.modal-footer {
-				display: flex;
-				justify-content: center;
-			}
-		</style>
-
-		<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
-		<style>
-			.wave {
-				animation-name: wave-animation;
-				animation-duration: 2.5s;
-				animation-iteration-count: infinite;
-				transform-origin: 70% 70%;
-				display: inline-block;
-			}
-		</style>
-
-		<style>
-			@keyframes wave-animation {
-				0% {
-					transform: rotate(0.0deg)
-				}
-
-				20% {
-					transform: rotate(-8.0deg)
-				}
-
-				30% {
-					transform: rotate(14.0deg)
-				}
-
-				40% {
-					transform: rotate(-4.0deg)
-				}
-
-				50% {
-					transform: rotate(10.0deg)
-				}
-
-				60% {
-					transform: rotate(0.0deg)
-				}
-
-			}
-		</style>
+	<body class="has-text-centered">
 
 		<!-- Added class to <body> tag to center all content on page here: -->
 
 		<div class="has-text-centered">
 
 			<!-- Title and date input section -->
-			<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30">Grocery Time-Saver</h1>
+			<h1 class="title is-1 has-text-centered is-spaced has-text-primary-30 ">Grocery Time-Saver</h1>
 			<section class="subtitle is-5 has-text-centered" id="datePicker">
 				<label for="dateInput" class="has-text-primary-0">Enter Date:</label>
 				<input type="date" class="has-text-primary-0">
@@ -76,26 +28,25 @@
 						<div class="box">
 
 							<ul id="list-container">
-								<li>Apples</li>
-								<li>Oranges</li>
-								<li>Bananas</li>
 							</ul>
 						</div>
 					</div>
 				</section>
 
-	<!-- "Add button section" -->
-	<section class="my-4">
+				<!-- "Add button section" -->
+				<section class="my-4">
 
 
-		<div class="field has-addons has-addons-centered is-responsive">
-			<div class="control">
-				<input id="item-input" type="text" class="input is-rounded is-large" placeholder="Add your text" />
-			</div>
-			<div class="control">
-				<button id="add-button" class="button is-large is-rounded is-primary has-text-inverted">+</button>
-			</div>
-		</div>
+					<div class="field has-addons has-addons-centered is-responsive">
+						<div class="control">
+							<input id="item-input" type="text" class="input is-rounded is-large"
+								placeholder="Add your text" />
+						</div>
+						<div class="control">
+							<button id="add-button"
+								class="button is-large is-rounded is-primary has-text-inverted">+</button>
+						</div>
+					</div>
 
 				</section>
 
@@ -147,9 +98,58 @@
 				</div>
 			</div>
 		</div>
+		<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
+		<style>
+			.modal-footer {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
+
+		<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
+		<style>
+			.wave {
+				animation-name: wave-animation;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				transform-origin: 70% 70%;
+				display: inline-block;
+			}
+		</style>
+
+		<style>
+			@keyframes wave-animation {
+				0% {
+					transform: rotate(0.0deg)
+				}
+
+				20% {
+					transform: rotate(-8.0deg)
+				}
+
+				30% {
+					transform: rotate(14.0deg)
+				}
+
+				40% {
+					transform: rotate(-4.0deg)
+				}
+
+				50% {
+					transform: rotate(10.0deg)
+				}
+
+				60% {
+					transform: rotate(0.0deg)
+				}
+
+			}
+		</style>
 		</section>
 
 		<script src="./assets/js/script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 
 </html>
