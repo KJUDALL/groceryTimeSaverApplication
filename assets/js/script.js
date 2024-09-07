@@ -13,32 +13,7 @@ document.getElementById('add-button').addEventListener('click', function () {
 
 // Modal JS Functionality Implementation Below:
 
-// Clicking the 'x' button in the top right: 
-document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.querySelector('.modal');
-    const modalButton = document.querySelector('.button');
-    const closeButton = modal.querySelector('.delete');
-
-    // Fx to open the modal
-    function openModal() {
-        modal.classList.add('is-active');
-    }
-
-    // Fx to close the modal
-    function closeModal() {
-        modal.classList.remove('is-active');
-    }
-
-    // Event listener for the button to open the modal
-    modalButton.addEventListener('click', closeModal);
-
-    // Event listener for the close button within the modal
-    closeButton.addEventListener('click', closeModal);
-});
-
-
-
-// Clicking the 'Let's Get Started!' button:
+// Clicking the 'x' button in the top right or 'Let's Get Started!' button to close the Modal: 
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.modal');
     const modalButton = document.querySelector('.button');
@@ -55,12 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.remove('is-active');
     }
 
-    // Event listener for the button to open the modal
-    modalButton.addEventListener('click', openModal);
 
-    // Event listener for the close button within the modal
+    // Event listener for the 'x' button to close the modal
     closeButton.addEventListener('click', closeModal);
 
-    // Event listener for the "Let's Get Started!" button to close the modal
-    startButton.addEventListener('click', closeModal);
+     // Event listener for the "Let's Get Started!" button to close the modal
+     startButton.addEventListener('click', closeModal);
 });
+
