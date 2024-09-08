@@ -1,64 +1,16 @@
 <html lang="en" data-theme="light">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-	<link rel="stylesheet" href="assets\css\style.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery Time-Saver</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="assets\css\style.css" />
+	</head>
 
-<!-- Added formatting to center all content within the page + the Modal here: -->
+	<!-- Added formatting to center all content within the page + the Modal here: -->
 
-<body class="has-text-centered">
-
-
-	<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
-	<style>
-		.modal-footer {
-			display: flex;
-			justify-content: center;
-		}
-	</style>
-
-	<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
-	<style>
-		.wave {
-			animation-name: wave-animation;
-			animation-duration: 2.5s;
-			animation-iteration-count: infinite;
-			transform-origin: 70% 70%;
-			display: inline-block;
-		}
-	</style>
-
-	<style>
-		@keyframes wave-animation {
-			0% {
-				transform: rotate(0.0deg)
-			}
-
-			20% {
-				transform: rotate(-8.0deg)
-			}
-
-			30% {
-				transform: rotate(14.0deg)
-			}
-
-			40% {
-				transform: rotate(-4.0deg)
-			}
-
-			50% {
-				transform: rotate(10.0deg)
-			}
-
-			60% {
-				transform: rotate(0.0deg)
-			}
-
-		}
-	</style>
+	<body class="has-text-centered">
 
 	<!-- Added class to <body> tag to center all content on page here: -->
 
@@ -75,18 +27,14 @@
 				<div class="container">
 					<div class="box">
 
-						<ul id="list-container">
-							<li>Apples</li>
-							<li>Oranges</li>
-							<li>Bananas</li>
-						</ul>
+							<ul id="list-container">
+							</ul>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<!-- "Add button section" -->
-			<section class="my-4">
-
+				<!-- "Add button section" -->
+				<section class="my-4">
 
 				<div class="field has-addons has-addons-centered is-responsive">
 					<div class="control">
@@ -136,7 +84,7 @@
 				<p>
 					Enjoy!
 				</p>
-
+        
 
 			</section>
 
@@ -148,10 +96,60 @@
 
 			</div>
 		</div>
-	</div>
-	</section>
+  </div>
+    
+		<!-- Added Style Tag to center "Let's Get Started" button in the Modal here: -->
+		<style>
+			.modal-footer {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
 
-	<script src="./assets/js/script.js"></script>
-</body>
+		<!-- Added Style Tag(s) to animate waving hand emoji in the Modal here: -->
+		<style>
+			.wave {
+				animation-name: wave-animation;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				transform-origin: 70% 70%;
+				display: inline-block;
+			}
+		</style>
+
+		<style>
+			@keyframes wave-animation {
+				0% {
+					transform: rotate(0.0deg)
+				}
+
+				20% {
+					transform: rotate(-8.0deg)
+				}
+
+				30% {
+					transform: rotate(14.0deg)
+				}
+
+				40% {
+					transform: rotate(-4.0deg)
+				}
+
+				50% {
+					transform: rotate(10.0deg)
+				}
+
+				60% {
+					transform: rotate(0.0deg)
+				}
+
+			}
+		</style>
+		</section>
+
+		<script src="./assets/js/script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
 
 </html>
