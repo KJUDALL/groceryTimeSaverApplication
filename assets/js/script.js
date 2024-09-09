@@ -20,6 +20,7 @@ function renderGroceryItems() {
 document.getElementById('add-button').addEventListener('click', function () {
     if (input.value.trim() !== '') {
         groceryItems.push(input.value);
+        localStorage.setItem('groceryItems', JSON.stringify(groceryItems)); // Save input to local storage
         renderGroceryItems()
         input.value = '';
     }
@@ -33,7 +34,8 @@ listContainer.addEventListener('click', function (event) {
         const deletedItem = parentLi.textContent // removes the text
         const ind = groceryItems.findIndex(function (item) { return item === deletedItem })
         groceryItems.splice(ind, 1); // splice 
-        renderGroceryItems()
+        localStorage.setItem('groceryItems', JSON.stringify(groceryItems)); // Update local storage upon item deletion
+        renderGroceryItems();
     };
     /* In this fx, every time the trash icon is clicked, the page renders and populates the remaining <li>, if any. The console will indicate the specific <li> that was removed */
 })
@@ -43,7 +45,10 @@ input.addEventListener('keypress', function (event) {
     if (event.keyCode === 13) { // 13 is the keyCode for the enter key
         addButton.click(); // this will add a word upon clicking enter
     }
-})
+});
+
+// Call on renderGroceryItems when the page loads
+renderGroceryItems();
 
 // Modal JS Functionality Implementation Below:
 

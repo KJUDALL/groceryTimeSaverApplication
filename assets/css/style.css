@@ -15,7 +15,7 @@ cursor: pointer;
 
 ul li {
 	list-style: none;
-	font-size: large;
+	font-size: larger;
 	padding: 12px 8px 12px 50px;
 	user-select: none;
 	position: relative;
